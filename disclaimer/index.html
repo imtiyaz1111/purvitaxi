@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Disclaimer | Purvi Taxi Service</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+/* Global */
+body{
+    font-family:'Poppins',sans-serif;
+    margin:0;
+}
+
+/* HERO SECTION */
+.disclaimer-hero{
+    position:relative;
+    height:350px;
+    background:url('../images/common-hero-img.avif') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    margin-top: 70px !important;
+}
+
+.disclaimer-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(90deg, rgba(90,35,0,0.95) 0%, rgba(140,60,0,0.85) 60%, rgba(255,140,0,0.6) 100%);
+}
+
+.disclaimer-hero .container{
+    position:relative;
+    z-index:2;
+    color:#fff;
+}
+
+/* Breadcrumb */
+.breadcrumb-custom a{
+    color:#ffb347;
+    text-decoration:none;
+}
+
+.breadcrumb-custom span{
+    margin:0 8px;
+    opacity:0.7;
+}
+
+/* Title */
+.disclaimer-title{
+    font-size:38px;
+    font-weight:800;
+}
+
+/* CONTENT */
+.disclaimer-content{
+    padding:80px 0;
+    background:#fff7ef;
+}
+
+.disclaimer-card{
+    background:#fff;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.05);
+}
+
+.disclaimer-card h2{
+    font-size:22px;
+    margin-top:30px;
+    font-weight:700;
+    color:#ff7a00;
+}
+
+.disclaimer-card p{
+    color:#555;
+    line-height:1.8;
+    margin-top:10px;
+}
+
+.disclaimer-card ul{
+    margin-top:10px;
+}
+
+.disclaimer-card ul li{
+    margin-bottom:8px;
+}
+
+/* Responsive */
+@media(max-width:991px){
+    .disclaimer-title{
+        font-size:26px;
+    }
+
+    .disclaimer-card{
+        padding:30px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+       <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+      <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <img src="/images/logo.png" alt="Purvi Taxi Logo" class="nav-logo" />
+        </a>
+
+        <!-- MOBILE TOGGLE -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../aboutus/index.html">About Us</a>
+            </li>
+
+            <!-- CITY DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../city/index.html"
+                data-bs-toggle="dropdown"
+              >
+                City
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-mathura/index.html"
+                    >Taxi in Mathura</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-vrindavan/index.html"
+                    >Taxi in Vrindavan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-barsana/index.html"
+                    >Taxi in Barsana</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../city/taxi-services-in-gokul/index.html"
+                    >Taxi in Gokul</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-goverdhan/index.html"
+                    >Taxi in Goverdhan</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- ROUTES DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../routes/index.html"
+                data-bs-toggle="dropdown"
+              >
+                Popular Routes
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../routes/mathura-to-delhi-cab/index.html"
+                    >Mathura to Delhi Cab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../routes/mathura-to-agra-cab/index.html"
+                    >Mathura to Agra Cab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../routes/mathura-to-noida-cab/index.html"
+                    >Mathura to Noida Cab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../routes/vrindavan-to-delhi-cab/index.html"
+                    >Vrindavan to Delhi Cab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item fw-semibold text-warning"
+                    href="../routes/index.html"
+                    >View All Routes →</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../contact/index.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- ENQUIRE BUTTON -->
+          <div>
+            <a href="../contact/index.html" class="btn btn-enquire-nav">
+              Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<!-- HERO -->
+<section class="disclaimer-hero">
+    <div class="disclaimer-overlay"></div>
+    <div class="container">
+        <nav class="breadcrumb-custom mb-3">
+            <a href="#">Home</a>
+            <span>/</span>
+            <span>Disclaimer</span>
+        </nav>
+        <h1 class="disclaimer-title">Disclaimer</h1>
+        <p>Please read this disclaimer carefully before using our services.</p>
+    </div>
+</section>
+
+<!-- CONTENT -->
+<section class="disclaimer-content">
+    <div class="container">
+        <div class="disclaimer-card">
+
+            <p>
+                The information provided by <strong>Purvi Taxi Service</strong> on this website 
+                is for general informational purposes only. All information is provided in good faith; 
+                however, we make no representation or warranty of any kind, express or implied, 
+                regarding the accuracy, adequacy, validity, reliability, availability, or completeness 
+                of any information on the website.
+            </p>
+
+            <h2>1. Service Availability</h2>
+            <p>
+                Taxi availability is subject to vehicle and driver availability at the time of booking. 
+                We reserve the right to modify or cancel bookings due to unforeseen circumstances 
+                such as weather conditions, vehicle breakdown, traffic delays, or other operational issues.
+            </p>
+
+            <h2>2. Pricing Disclaimer</h2>
+            <p>
+                All fares are subject to change depending on fuel prices, route changes, waiting time, 
+                toll charges, parking fees, or government regulations. Final fare will be confirmed 
+                at the time of booking.
+            </p>
+
+            <h2>3. Third-Party Links</h2>
+            <p>
+                Our website may contain links to third-party websites such as payment gateways or maps. 
+                We are not responsible for the content, policies, or practices of any third-party sites.
+            </p>
+
+            <h2>4. Limitation of Liability</h2>
+            <p>
+                Purvi Taxi Service shall not be held liable for any indirect, incidental, or consequential 
+                damages arising out of the use of our services, including delays caused by traffic, 
+                weather, or other unavoidable circumstances.
+            </p>
+
+            <h2>5. Passenger Responsibility</h2>
+            <p>
+                Passengers are responsible for providing accurate booking information and ensuring 
+                punctuality at pickup points. Any damage caused to vehicles by passengers may 
+                result in additional charges.
+            </p>
+
+            <h2>6. Changes to This Disclaimer</h2>
+            <p>
+                We reserve the right to update or modify this Disclaimer at any time without prior notice. 
+                Continued use of our website and services after changes indicates acceptance of the updated terms.
+            </p>
+
+            <h2>7. Contact Information</h2>
+            <p>
+                If you have any questions regarding this Disclaimer, please contact us:
+                <br><br>
+                📞 Phone: +91 7300532278  
+                <br>
+                📧 Email: sharmamithun48010@gmail.com
+            </p>
+
+            <p class="mt-4">
+                Last Updated: February 2026
+            </p>
+
+        </div>
+    </div>
+</section>
+
+  <!-- FOOTER SECTION -->
+    <footer class="footer-modern position-relative">
+      <!-- Background Accent Shapes -->
+      <div class="footer-shape-1"></div>
+      <div class="footer-shape-2"></div>
+
+      <div class="container position-relative">
+        <div class="row gy-5">
+          <!-- ABOUT -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-logo">
+              <img src="../images/logo.png" width="200" alt="" />
+            </h4>
+            <p class="footer-text">
+              Reliable and affordable taxi service in Mathura, Vrindavan and
+              nearby cities. Available 24/7 for local and outstation trips.
+            </p>
+
+            <div class="footer-social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- QUICK LINKS -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../aboutus/index.html">About Us</a></li>
+              <li><a href="../city/index.html">City Services</a></li>
+              <li><a href="../routes/index.html">Popular Routes</a></li>
+              <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- CITY SERVICES -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">City Services</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../city/taxi-services-in-mathura/index.html"
+                  >Taxi Services in Mathura</a
+                >
+              </li>
+              <li>
+                <a href="../city/taxi-services-in-vrindavan/index.html"
+                  >Taxi Services in Vrindavan</a
+                >
+              </li>
+              <li>
+                <a href="../city/taxi-services-in-barsana/index.html"
+                  >Taxi Services in Barsana</a
+                >
+              </li>
+              <li>
+                <a href="../city/taxi-services-in-gokul/index.html"
+                  >Taxi Services in Gokul</a
+                >
+              </li>
+              <li>
+                <a href="../city/taxi-services-in-goverdhan/index.html"
+                  >Taxi Services in Goverdhan</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Contact Info</h5>
+
+            <div class="footer-contact">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+91 7300532278</span>
+            </div>
+
+            <div class="footer-contact">
+              <i class="bi bi-envelope-fill"></i>
+              <span>sharmamithun48010@gmail.com</span>
+            </div>
+
+            <div class="footer-contact">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Raya road, Lohaban, Mathura, Uttar Pradesh 281204</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom text-center mt-5">
+          <hr />
+          <div class="footer-bottom-links">
+            <a href="../disclaimer/index.html">Disclaimer</a>
+            <a href="../privacy-policy/index.html">Privacy Policy</a>
+            <a href="#">All Locations</a>
+          </div>
+          <p class="copyright">
+            © 2026 Purvi Taxi Service. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+     <script src="../js/script.js"></script>
+</body>
+</html>

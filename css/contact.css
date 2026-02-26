@@ -1,0 +1,90 @@
+/* CONTACT HERO SECTION */
+.contact-hero {
+  position: relative;
+  height: 420px;
+  background: url("../images/common-hero-img.avif") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+/* Gradient Overlay */
+.contact-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(90, 35, 0, 0.95) 0%,
+    rgba(140, 60, 0, 0.85) 60%,
+    rgba(255, 140, 0, 0.6) 100%
+  );
+}
+
+/* Content Layer */
+.contact-hero .container {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+/* Breadcrumb */
+.contact-breadcrumb {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.contact-breadcrumb a {
+  color: #ffb347;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-breadcrumb span {
+  margin: 0 8px;
+  opacity: 0.7;
+}
+
+.contact-breadcrumb .active {
+  color: #fff;
+}
+
+/* Title */
+.contact-hero-title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.contact-hero-title span {
+  background: linear-gradient(45deg, #ff7a00, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.contact-hero-subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .contact-hero {
+    height: 350px;
+    text-align: center;
+  }
+
+  .contact-hero-title {
+    font-size: 30px;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 15px;
+  }
+}
