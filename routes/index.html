@@ -1,11 +1,820 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Routes</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/routes.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+      <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand fw-bold" href="../index.html">
+          <img
+            src="../images/logo.png"
+            alt="Purvi Taxi Logo"
+            class="nav-logo"
+          />
+        </a>
+
+        <!-- MOBILE TOGGLE -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENU -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../aboutus/index.html">About Us</a>
+            </li>
+
+            <!-- CITY DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../city/index.html"
+                data-bs-toggle="dropdown"
+              >
+                City
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-mathura/index.html"
+                    >Taxi in Mathura</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-vrindavan/index.html"
+                    >Taxi in Vrindavan</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-barsana/index.html"
+                    >Taxi in Barsana</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-gokul/index.html"
+                    >Taxi in Gokul</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../city/taxi-services-in-goverdhan/index.html"
+                    >Taxi in Goverdhan</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- ROUTES DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="../routes/index.html"
+                data-bs-toggle="dropdown"
+              >
+                Popular Routes
+              </a>
+              <ul class="dropdown-menu custom-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../routes/mathura-to-delhi-cab/index.html"
+                    >Mathura to Delhi Cab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../routes/mathura-to-agra-cab/index.html"
+                    >Mathura to Agra Cab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../routes/mathura-to-noida-cab/index.html"
+                    >Mathura to Noida Cab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../routes/vrindavan-to-delhi-cab/index.html"
+                    >Vrindavan to Delhi Cab</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item fw-semibold text-warning"
+                    href="../routes/index.html"
+                    >View All Routes →</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../contact/index.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- ENQUIRE BUTTON -->
+          <div>
+            <a href="../contact/index.html" class="btn btn-enquire-nav">
+              Enquire Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ALL ROUTES HERO SECTION -->
+    <section class="route-hero position-relative">
+      <!-- Overlay -->
+      <div class="route-hero-overlay"></div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <!-- Breadcrumb -->
+            <nav class="route-breadcrumb">
+              <a href="../index.html">Home</a>
+              <span>/</span>
+              <span class="active">All Routes</span>
+            </nav>
+
+            <!-- Title -->
+            <h1 class="route-hero-title">
+              Explore Our <span>Popular Taxi Routes</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="route-hero-subtitle">
+              Discover affordable and reliable taxi services from Mathura,
+              Vrindavan and nearby cities. We offer One Way, Round Trip and
+              Airport transfer services with professional drivers and
+              transparent pricing.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="route-hero-buttons">
+              <a href="tel:+917300532278" class="btn btn-route-call">
+                <i class="bi bi-telephone-fill"></i> Call Now
+              </a>
+
+              <a
+                href="https://wa.me/917300532278"
+                target="_blank"
+                class="btn btn-route-whatsapp"
+              >
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALL ROUTES SECTION -->
+    <section class="all-routes-section py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+          <h2 class="routes-main-title">Browse All Taxi Routes</h2>
+          <p class="routes-main-subtitle">
+            Find and book reliable taxi services from Mathura & Vrindavan to
+            major cities.
+          </p>
+        </div>
+
+        <!-- Search & Filter Row -->
+        <div class="routes-filter-wrapper mb-4">
+          <!-- Search -->
+          <div class="routes-search">
+            <i class="bi bi-search"></i>
+            <input type="text" id="routeSearch" placeholder="Search route..." />
+          </div>
+
+          <!-- Filter Buttons -->
+          <div class="routes-filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="mathura">
+              From Mathura
+            </button>
+            <button class="filter-btn" data-filter="vrindavan">
+              From Vrindavan
+            </button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="routesContainer">
+          <!-- ================= MATHURA ROUTES ================= -->
+
+          <!-- Mathura to Delhi -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/MathuratoDelhiCab.png" alt="Mathura to Delhi Cab" />
+              <div class="route-modern-content">
+                <h5>Mathura to Delhi Cab</h5>
+                <p>
+                  Affordable one way & round trip taxi service with professional
+                  drivers.
+                </p>
+                <a href="./mathura-to-delhi-cab/index.html" class="route-modern-btn"
+                  >View Detials</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Noida -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/MathuratoNoidaCab.png" alt="Mathura to Noida Cab" />
+              <div class="route-modern-content">
+                <h5>Mathura to Noida Cab</h5>
+                <p>Safe & comfortable taxi service with transparent pricing.</p>
+                <a href="./mathura-to-noida-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Greater Noida -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/MathuratoGreateNoidaCab.png"
+                alt="Mathura to Greater Noida Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Mathura to Greater Noida Cab</h5>
+                <p>Reliable outstation cab service with experienced drivers.</p>
+                <a href="./mathura-to-greater-noida-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Delhi Airport -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/MathuratoDelhiAirportCab.png"
+                alt="Mathura to Delhi Airport Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Mathura to Delhi Airport Cab</h5>
+                <p>
+                  24/7 airport transfer service with on-time pickup guarantee.
+                </p>
+                <a href="./mathura-to-delhi-airport-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Ghaziabad -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/MathuratoGhazibadCab.png"
+                alt="Mathura to Ghaziabad Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Mathura to Ghaziabad Cab</h5>
+                <p>
+                  Comfortable long-distance taxi service at affordable rates.
+                </p>
+                <a href="./mathura-to-ghaziabad-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Agra -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/MathuratoAgraCab.png" alt="Mathura to Agra Cab" />
+              <div class="route-modern-content">
+                <h5>Mathura to Agra Cab</h5>
+                <p>Best cab service for Taj Mahal visit & sightseeing tours.</p>
+                <a href="./mathura-to-agra-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Aligarh -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/MathuratoAligarhCab.png" alt="Mathura to Aligarh Cab" />
+              <div class="route-modern-content">
+                <h5>Mathura to Aligarh Cab</h5>
+                <p>One way & round trip cab service with fixed pricing.</p>
+                <a href="./mathura-to-aligarh-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Bharatpur -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/MathuratoBharatpurCab.png"
+                alt="Mathura to Bharatpur Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Mathura to Bharatpur Cab</h5>
+                <p>Travel safely to Bharatpur with professional drivers.</p>
+                <a href="./mathura-to-bharatpur-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Mehandipur Balaji -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/MathuratoMehandipurBalajiCab.png"
+                alt="Mathura to Mehandipur Balaji Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Mathura to Mehandipur Balaji Cab</h5>
+                <p>Special pilgrimage taxi service available at best rates.</p>
+                <a href="./mathura-to-mehandipur-balaji-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Goverdhan -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/MathuratoGoverdhanCab.png"
+                alt="Mathura to Goverdhan Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Mathura to Goverdhan Cab</h5>
+                <p>Comfortable local sightseeing cab service.</p>
+                <a href="./mathura-to-goverdhan-cab/index.html" class="route-modern-btn"
+                  >View Details </a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathura to Gokul -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="mathura"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/MathuratoGokulCab.png" alt="Mathura to Gokul Cab" />
+              <div class="route-modern-content">
+                <h5>Mathura to Gokul Cab</h5>
+                <p>
+                  Quick and affordable taxi service for short distance travel.
+                </p>
+                <a href="./mathura-to-gokul-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= VRINDAVAN ROUTES ================= -->
+
+          <!-- Vrindavan to Delhi -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/VrindavanToDelhiCab.png" alt="Vrindavan to Delhi Cab" />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Delhi Cab</h5>
+                <p>Affordable Delhi taxi service from Vrindavan.</p>
+                <a href="./vrindavan-to-delhi-cab/index.html" class="route-modern-btn"
+                  >View Details </a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Noida -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/VrindavanToNoidaCab.png" alt="Vrindavan to Noida Cab" />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Noida Cab</h5>
+                <p>Safe & reliable cab service with experienced drivers.</p>
+                <a href="./vrindavan-to-noida-cab/index.html" class="route-modern-btn"
+                  >View Details </a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Greater Noida -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/VrindavanToGreaterNoidaCab.png"
+                alt="Vrindavan to Greater Noida Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Greater Noida Cab</h5>
+                <p>Comfortable long distance travel at best prices.</p>
+                <a href="./vrindavan-to-greater-noida-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Delhi Airport -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/VrindavantoDelhiAirportCab.png"
+                alt="Vrindavan to Delhi Airport Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Delhi Airport Cab</h5>
+                <p>24/7 airport transfer service with on-time pickup.</p>
+                <a href="./vrindavan-to-delhi-airport-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Ghaziabad -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/VrindavanToGhaziabadCab.png"
+                alt="Vrindavan to Ghaziabad Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Ghaziabad Cab</h5>
+                <p>Reliable taxi service for comfortable journey.</p>
+                <a href="./vrindavan-to-ghaziabad-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Agra -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/VrindavanToAgraCab.png" alt="Vrindavan to Agra Cab" />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Agra Cab</h5>
+                <p>Perfect cab option for Taj Mahal sightseeing trip.</p>
+                <a href="./vrindavan-to-agra-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Aligarh -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/VrindavanToAligarhCab.png "
+                alt="Vrindavan to Aligarh Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Aligarh Cab</h5>
+                <p>Affordable & safe cab service with transparent pricing.</p>
+                <a href="./vrindavan-to-aligarh-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Bharatpur -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/VrindavanToBharatpurCab.png"
+                alt="Vrindavan to Bharatpur Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Bharatpur Cab</h5>
+                <p>Travel safely with professional and courteous drivers.</p>
+                <a href="./vrindavan-to-bharatpur-cab/index.html" class="route-modern-btn"
+                  >View Details </a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Mehandipur Balaji -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/VrindavanToMehandipurBalajiCab.png"
+                alt="Vrindavan to Mehandipur Balaji Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Mehandipur Balaji Cab</h5>
+                <p>Special pilgrimage taxi service at affordable rates.</p>
+                <a href="./vrindavan-to-mehandipur-balaji-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Goverdhan -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img
+                src="../images/routes/VrindavanToGoverdhanCab.png"
+                alt="Vrindavan to Goverdhan Cab"
+              />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Goverdhan Cab</h5>
+                <p>Local taxi service for comfortable short trips.</p>
+                <a href="./vrindavan-to-goverdhan-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Vrindavan to Gokul -->
+          <div
+            class="col-lg-4 col-md-6 route-card-item"
+            data-category="vrindavan"
+          >
+            <div class="route-modern-card">
+              <img src="../images/routes/VrindavanToGokulCab.png" alt="Vrindavan to Gokul Cab" />
+              <div class="route-modern-content">
+                <h5>Vrindavan to Gokul Cab</h5>
+                <p>Fast and reliable taxi service with best pricing.</p>
+                <a href="./vrindavan-to-gokul-cab/index.html" class="route-modern-btn"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer-modern position-relative">
+      <!-- Background Accent Shapes -->
+      <div class="footer-shape-1"></div>
+      <div class="footer-shape-2"></div>
+
+      <div class="container position-relative">
+        <div class="row gy-5">
+          <!-- ABOUT -->
+          <div class="col-lg-4 col-md-6">
+            <h4 class="footer-logo">
+              <img src="../images/logo.png" width="200" alt="" />
+            </h4>
+            <p class="footer-text">
+              Reliable and affordable taxi service in Mathura, Vrindavan and
+              nearby cities. Available 24/7 for local and outstation trips.
+            </p>
+
+            <div class="footer-social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- QUICK LINKS -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../aboutus/index.html">About Us</a></li>
+              <li><a href="../city/index.html">City Services</a></li>
+              <li><a href="../routes/index.html">Popular Routes</a></li>
+              <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- CITY SERVICES -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">City Services</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="../city/taxi-services-in-mathura/index.html"
+                  >Taxi Services in Mathura</a
+                >
+              </li>
+              <li>
+                <a href="../city/taxi-services-in-vrindavan/index.html"
+                  >Taxi Services in Vrindavan</a
+                >
+              </li>
+              <li>
+                <a href="../city/taxi-services-in-barsana/index.html"
+                  >Taxi Services in Barsana</a
+                >
+              </li>
+              <li>
+                <a href="../city/taxi-services-in-gokul/index.html"
+                  >Taxi Services in Gokul</a
+                >
+              </li>
+              <li>
+                <a href="../city/taxi-services-in-goverdhan/index.html"
+                  >Taxi Services in Goverdhan</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- CONTACT INFO -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Contact Info</h5>
+
+            <div class="footer-contact">
+              <i class="bi bi-telephone-fill"></i>
+              <span>+91 7300532278</span>
+            </div>
+
+            <div class="footer-contact">
+              <i class="bi bi-envelope-fill"></i>
+              <span>sharmamithun48010@gmail.com</span>
+            </div>
+
+            <div class="footer-contact">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Raya road, Lohaban, Mathura, Uttar Pradesh 281204</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="footer-bottom text-center mt-5">
+          <hr />
+          <div class="footer-bottom-links">
+            <a href="../disclaimer/index.html">Disclaimer</a>
+            <a href="../privacy-policy/index.html">Privacy Policy</a>
+            <a href="#">All Locations</a>
+          </div>
+          <p class="copyright">
+            © 2026 Purvi Taxi Service. All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+      const searchInput = document.getElementById("routeSearch");
+      const routeItems = document.querySelectorAll(".route-card-item");
+      const filterButtons = document.querySelectorAll(".filter-btn");
+
+      searchInput.addEventListener("keyup", function () {
+        const value = this.value.toLowerCase();
+        routeItems.forEach((item) => {
+          const text = item.innerText.toLowerCase();
+          item.style.display = text.includes(value) ? "block" : "none";
+        });
+      });
+
+      filterButtons.forEach((btn) => {
+        btn.addEventListener("click", function () {
+          document
+            .querySelector(".filter-btn.active")
+            .classList.remove("active");
+          this.classList.add("active");
+
+          const filter = this.getAttribute("data-filter");
+
+          routeItems.forEach((item) => {
+            if (filter === "all" || item.dataset.category === filter) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

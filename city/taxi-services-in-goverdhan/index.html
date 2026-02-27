@@ -651,26 +651,52 @@
                 Get a free quote today and customize your taxi trip!
               </p>
 
-              <form>
+          <form action="../../send-inquiry.php" method="POST">
                 <div class="input-group-modern">
                   <i class="bi bi-person"></i>
-                  <input type="text" placeholder="Your Name" required />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
 
                 <div class="input-group-modern">
                   <i class="bi bi-telephone"></i>
-                  <input type="tel" placeholder="Phone Number" required />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                  />
                 </div>
 
                 <div class="input-group-modern">
                   <i class="bi bi-geo-alt"></i>
-                  <input type="text" placeholder="Pickup Location" required />
+                  <input
+                    type="text"
+                    name="pickup"
+                    placeholder="Pickup Location"
+                    required
+                  />
                 </div>
 
                 <div class="input-group-modern">
                   <i class="bi bi-geo"></i>
-                  <input type="text" placeholder="Drop Location" required />
+                  <input
+                    type="text"
+                    name="drop_location"
+                    placeholder="Drop Location"
+                    required
+                  />
                 </div>
+
+                <input
+                  type="hidden"
+                  name="source_page"
+                  value="Taxi Service in Barsana Page"
+                />
 
                 <button type="submit" class="btn-enquire-modern w-100">
                   <i class="bi bi-send-fill"></i> Enquire Now

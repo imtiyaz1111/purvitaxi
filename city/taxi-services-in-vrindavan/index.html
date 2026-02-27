@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="../../css/common-city-destails.css" />
   </head>
   <body>
-  <!-- NAVBAR START -->
+    <!-- NAVBAR START -->
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
       <div class="container">
         <!-- LOGO -->
@@ -256,16 +256,17 @@
                 Our professional drivers are well-trained and familiar with all
                 major routes, including temples, railway stations and tourist
                 attractions. We also provide fast and convenient
-                <strong>Vrindavan airport taxi</strong> services for Delhi Airport
-                transfers at competitive prices.
+                <strong>Vrindavan airport taxi</strong> services for Delhi
+                Airport transfers at competitive prices.
               </p>
 
               <p>
-                Looking for a trusted <strong>local cab in Vrindavan</strong>? We
-                operate 24/7 to serve residents and tourists visiting Vrindavan
-                and nearby cities like Vrindavan and Agra. With transparent
-                pricing, clean vehicles and instant booking confirmation, Purvi
-                Taxi Service ensures a smooth travel experience every time.
+                Looking for a trusted <strong>local cab in Vrindavan</strong>?
+                We operate 24/7 to serve residents and tourists visiting
+                Vrindavan and nearby cities like Vrindavan and Agra. With
+                transparent pricing, clean vehicles and instant booking
+                confirmation, Purvi Taxi Service ensures a smooth travel
+                experience every time.
               </p>
 
               <div class="about-city-btn">
@@ -332,8 +333,8 @@
             Services We Provide in <span>Vrindavan</span>
           </h2>
           <p class="section-subtitle">
-            Reliable and affordable taxi services in Vrindavan for local, airport
-            and outstation travel.
+            Reliable and affordable taxi services in Vrindavan for local,
+            airport and outstation travel.
           </p>
         </div>
 
@@ -368,8 +369,8 @@
               <i class="bi bi-airplane-fill"></i>
               <h5>Airport Transfer</h5>
               <p>
-                Fast and reliable Vrindavan airport taxi for Delhi Airport pickup
-                & drop.
+                Fast and reliable Vrindavan airport taxi for Delhi Airport
+                pickup & drop.
               </p>
             </div>
           </div>
@@ -379,7 +380,9 @@
             <div class="service-card">
               <i class="bi bi-train-front-fill"></i>
               <h5>Railway Station Pickup</h5>
-              <p>On-time railway station pickup and drop service in Vrindavan.</p>
+              <p>
+                On-time railway station pickup and drop service in Vrindavan.
+              </p>
             </div>
           </div>
 
@@ -483,8 +486,8 @@
               <i class="bi bi-clock-history"></i>
               <h5>On-Time Pickup</h5>
               <p>
-                Punctual taxi service in Vrindavan for airport, railway and local
-                trips.
+                Punctual taxi service in Vrindavan for airport, railway and
+                local trips.
               </p>
             </div>
           </div>
@@ -501,7 +504,8 @@
             Frequently Asked Questions – Taxi Service in <span>Vrindavan</span>
           </h2>
           <p class="faq-subtitle">
-            Find answers to common questions about our taxi service in Vrindavan.
+            Find answers to common questions about our taxi service in
+            Vrindavan.
           </p>
         </div>
 
@@ -600,8 +604,9 @@
               data-bs-parent="#faqAccordion"
             >
               <div class="accordion-body">
-                You can book a cab in Vrindavan by calling us directly or through
-                WhatsApp. Instant confirmation is provided after booking.
+                You can book a cab in Vrindavan by calling us directly or
+                through WhatsApp. Instant confirmation is provided after
+                booking.
               </div>
             </div>
           </div>
@@ -650,26 +655,52 @@
                 Get a free quote today and customize your taxi trip!
               </p>
 
-              <form>
+              <form action="../../send-inquiry.php" method="POST">
                 <div class="input-group-modern">
                   <i class="bi bi-person"></i>
-                  <input type="text" placeholder="Your Name" required />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
 
                 <div class="input-group-modern">
                   <i class="bi bi-telephone"></i>
-                  <input type="tel" placeholder="Phone Number" required />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                  />
                 </div>
 
                 <div class="input-group-modern">
                   <i class="bi bi-geo-alt"></i>
-                  <input type="text" placeholder="Pickup Location" required />
+                  <input
+                    type="text"
+                    name="pickup"
+                    placeholder="Pickup Location"
+                    required
+                  />
                 </div>
 
                 <div class="input-group-modern">
                   <i class="bi bi-geo"></i>
-                  <input type="text" placeholder="Drop Location" required />
+                  <input
+                    type="text"
+                    name="drop_location"
+                    placeholder="Drop Location"
+                    required
+                  />
                 </div>
+
+                <input
+                  type="hidden"
+                  name="source_page"
+                  value="Taxi Service in Barsana Page"
+                />
 
                 <button type="submit" class="btn-enquire-modern w-100">
                   <i class="bi bi-send-fill"></i> Enquire Now
@@ -680,7 +711,7 @@
         </div>
       </div>
     </section>
-     <!-- FOOTER SECTION -->
+    <!-- FOOTER SECTION -->
     <footer class="footer-modern position-relative">
       <!-- Background Accent Shapes -->
       <div class="footer-shape-1"></div>

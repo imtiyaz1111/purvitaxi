@@ -1,0 +1,296 @@
+/* ROUTE HERO SECTION */
+.route-hero {
+  position: relative;
+  height: 460px;
+  background: url("../images/common-hero-img.avif") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+/* Gradient Overlay */
+.route-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(90, 35, 0, 0.95) 0%,
+    rgba(140, 60, 0, 0.85) 60%,
+    rgba(255, 140, 0, 0.6) 100%
+  );
+}
+
+/* Content */
+.route-hero .container {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+/* Breadcrumb */
+.route-breadcrumb {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.route-breadcrumb a {
+  color: #ffb347;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.route-breadcrumb span {
+  margin: 0 8px;
+  opacity: 0.7;
+}
+
+.route-breadcrumb .active {
+  color: #fff;
+}
+
+/* Title */
+.route-hero-title {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.route-hero-title span {
+  background: linear-gradient(45deg, #ff7a00, #ffb347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.route-hero-subtitle {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 650px;
+  opacity: 0.9;
+}
+
+/* Route Info Badges */
+.route-info-badges {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.route-info-badges span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  backdrop-filter: blur(5px);
+}
+
+/* Buttons */
+.route-hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-route-call {
+  background: #ff7a00;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.btn-route-call:hover {
+  background: #e66e00;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.btn-route-whatsapp {
+  background: #25D366;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.btn-route-whatsapp:hover {
+  background: #1ebe5d;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .route-hero {
+    height: auto;
+    padding: 90px 0;
+    text-align: center;
+  }
+
+  .route-hero-title {
+    font-size: 30px;
+  }
+
+  .route-hero-subtitle {
+    font-size: 15px;
+  }
+
+  .route-info-badges {
+    justify-content: center;
+  }
+
+  .route-hero-buttons {
+    justify-content: center;
+  }
+}
+
+/* ALL ROUTES SECTION */
+.all-routes-section {
+  background: #f9f6f2;
+}
+
+/* Section Title */
+.routes-main-title {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.routes-main-subtitle {
+  color: #666;
+  margin-top: 10px;
+}
+
+/* FILTER WRAPPER */
+.routes-filter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+/* SEARCH */
+.routes-search {
+  position: relative;
+  flex: 1;
+  max-width: 350px;
+}
+
+.routes-search input {
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #eee;
+  padding: 0 20px 0 45px;
+  transition: 0.3s;
+}
+
+.routes-search input:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 3px rgba(255,122,0,0.1);
+}
+
+.routes-search i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #ff7a00;
+}
+
+/* FILTER BUTTONS */
+.routes-filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  border: 1px solid #ff7a00;
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: linear-gradient(45deg,#ff7a00,#ff9d2f);
+  color: #fff;
+}
+
+/* ROUTE CARD */
+.route-modern-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.route-modern-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.route-modern-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.route-modern-content h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.route-modern-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.route-modern-btn {
+  display: inline-block;
+  background: linear-gradient(45deg,#ff7a00,#ff9d2f);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.route-modern-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,122,0,0.3);
+}
+
+/* Hover Effect */
+.route-modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(255,122,0,0.15);
+}
+
+/* Responsive */
+@media(max-width: 991px){
+  .routes-filter-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .routes-filter-buttons {
+    justify-content: center;
+  }
+}

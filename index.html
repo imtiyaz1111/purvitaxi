@@ -230,62 +230,36 @@
                 Get a free quote today and customize your taxi trip!
               </p>
 
-              <form>
-                <div class="input-group mb-3">
-                  <span class="input-group-text"
-                    ><i class="bi bi-geo-alt"></i
-                  ></span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Pick From"
-                  />
-                </div>
+             <form action="./send-inquiry.php" method="POST">
+  <div class="input-group mb-3">
+    <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+    <input type="text" name="pickup" class="form-control" placeholder="Pick From" required>
+  </div>
 
-                <div class="input-group mb-3">
-                  <span class="input-group-text"
-                    ><i class="bi bi-geo"></i
-                  ></span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Travelling To"
-                  />
-                </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text"><i class="bi bi-geo"></i></span>
+    <input type="text" name="drop_location" class="form-control" placeholder="Travelling To" required>
+  </div>
 
-                <div class="input-group mb-3">
-                  <span class="input-group-text"
-                    ><i class="bi bi-calendar-date"></i
-                  ></span>
-                  <input type="date" class="form-control" />
-                </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text"><i class="bi bi-calendar-date"></i></span>
+    <input type="date" name="travel_date" class="form-control" required>
+  </div>
 
-                <div class="input-group mb-3">
-                  <span class="input-group-text"
-                    ><i class="bi bi-telephone"></i
-                  ></span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Phone Number"
-                  />
-                </div>
+  <div class="input-group mb-3">
+    <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+  </div>
 
-                <div class="input-group mb-4">
-                  <span class="input-group-text"
-                    ><i class="bi bi-people"></i
-                  ></span>
-                  <input
-                    type="number"
-                    class="form-control"
-                    placeholder="No. Of Passengers"
-                  />
-                </div>
+  <div class="input-group mb-4">
+    <span class="input-group-text"><i class="bi bi-people"></i></span>
+    <input type="number" name="passengers" class="form-control" placeholder="No. Of Passengers" required>
+  </div>
 
-                <button type="submit" class="btn btn-enquire w-100">
-                  <i class="bi bi-send-fill"></i> Enquire Now
-                </button>
-              </form>
+  <button type="submit" class="btn btn-enquire w-100">
+    <i class="bi bi-send-fill"></i> Enquire Now
+  </button>
+</form>
             </div>
           </div>
         </div>
@@ -1450,51 +1424,37 @@
                 instantly.
               </p>
 
-              <form>
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      class="form-control custom-input"
-                      placeholder="Pick From"
-                    />
-                  </div>
+            <form action="./send-inquiry.php" method="POST">
+  <div class="row g-3">
 
-                  <div class="col-md-6">
-                    <input
-                      type="text"
-                      class="form-control custom-input"
-                      placeholder="Travel To"
-                    />
-                  </div>
+    <div class="col-md-6">
+      <input type="text" name="pickup" class="form-control custom-input" placeholder="Pick From" required>
+    </div>
 
-                  <div class="col-md-6">
-                    <input type="date" class="form-control custom-input" />
-                  </div>
+    <div class="col-md-6">
+      <input type="text" name="drop_location" class="form-control custom-input" placeholder="Travel To" required>
+    </div>
 
-                  <div class="col-md-6">
-                    <input
-                      type="tel"
-                      class="form-control custom-input"
-                      placeholder="Phone Number"
-                    />
-                  </div>
+    <div class="col-md-6">
+      <input type="date" name="travel_date" class="form-control custom-input" required>
+    </div>
 
-                  <div class="col-12">
-                    <input
-                      type="number"
-                      class="form-control custom-input"
-                      placeholder="No. Of Passengers"
-                    />
-                  </div>
+    <div class="col-md-6">
+      <input type="tel" name="phone" class="form-control custom-input" placeholder="Phone Number" required>
+    </div>
 
-                  <div class="col-12">
-                    <button class="btn contact-btn w-100">
-                      Get Instant Quote <i class="bi bi-arrow-right"></i>
-                    </button>
-                  </div>
-                </div>
-              </form>
+    <div class="col-12">
+      <input type="number" name="passengers" class="form-control custom-input" placeholder="No. Of Passengers" required>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="btn contact-btn w-100">
+        Get Instant Quote <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+
+  </div>
+</form>
             </div>
           </div>
 
