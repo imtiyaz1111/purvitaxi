@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 /* Gradient Overlay */
@@ -113,8 +113,10 @@
 /* Responsive */
 @media (max-width: 991px) {
   .city-hero {
-    height: 350px;
+    height: 400px;
     text-align: center;
+    
+
   }
 
   .city-hero-title {
